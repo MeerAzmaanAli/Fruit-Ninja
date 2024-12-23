@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Slayer</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="body">
+    <div id="menu">
+        <button id="singlePlayer">
+            <img src="public/singlePlayerBtn.png" alt="">
+        </button>
+        <button id="multiPlayer">
+            <img src="public/multiPlayerBtn.png" alt="">
+        </button>     
+    </div>
+   
+    <div id="scoreDisplay">
+        <img src="public/Score.png" alt="">Score: 0
+        <img src="public/Score.png" alt="">Opponent: 0
+       
+       
+    </div>
+    <div id="hint">if not LandScape then do LandScape your Device And reload the page</div>
+    <div id="gameOverMessage">
+        <div id="gameOverText">
+            <div id="scoreText">"</div> 
+            <div id="BotscoreText">"</div> 
+            <div id="winner">"</div>
+        </div>
+    </div>
+    
+    <div id="mutepanel"><button id="mute"></button></div>
+            <div id="lives">
+                
+                <button id="spectate-button">spectate</button>
+                <div id="x1"></div>
+                <div id="x2"></div> 
+                <div id="x3"></div> 
+            </div>
+            
+
+    <div id="gameContainer">      
+         
+        <canvas id="gameCanvas"></canvas>  
+        <button id="fullscreen">Enter Fullscreen</button>  
+        <canvas id="bot-canvas"></canvas>  
+         
+    </div> 
+
+    <audio id="boom" src="sounds/boom.mp3"></audio>
+    <audio id="spliced" src="sounds/splatter.mp3"></audio>
+    <audio id="missed" src="sounds/missed.mp3"></audio>
+    <audio id="start" src="sounds/start.mp3"></audio>
+    <audio id="over" src="sounds/over.mp3"></audio>
+
+    <script type="module" src='./src/game.js'></script>
+    <script type="module" src='./src/bot.js'></script>
+    <script type="module" src="./src/player.js"></script>
+    <script type="module" src="./src/fruit.js"></script>
+    
+</body>
+</html>
