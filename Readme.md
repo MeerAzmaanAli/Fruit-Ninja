@@ -1,2 +1,2 @@
-# Fruit Slice(Azmaan)
-play: https://bytesinitiator.github.io/Fruits/
+# Fruit Ninja
+play: https://meerazmaanali.github.io/Fruit-Ninja/
